@@ -1,3 +1,7 @@
+# Divides the HALF OF THE PICTURE into given number of rows and columns
+# Because if all the image is considered, the half of the divided frames are just blue sky
+# Here the divided frames are not overlapping
+
 import cv2
 import numpy as np
 import os
@@ -24,7 +28,6 @@ for i in range(num_rows):
     for j in range(num_cols):
         x = j * rect_width
         y = height + i * rect_height
-        # Adjust the code so, that the ROIs are overlapping and the frames cover the whole image
         roi = frame[y:y + rect_height, x:x + rect_width]
         rois.append(roi)
 

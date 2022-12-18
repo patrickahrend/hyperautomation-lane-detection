@@ -1,3 +1,7 @@
+# The highest common factor of 1280 and 720 is 80
+# With this function, we get the biggest possible SQUARE (not rectangle) frames
+# Also, this function doesn't create overlapping frames
+
 import cv2
 import numpy as np
 

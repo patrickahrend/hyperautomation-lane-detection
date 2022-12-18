@@ -1,3 +1,7 @@
+# Divides the picture into given number of rows and columns
+# Here the divided frames are overlapping
+# Hard coded right now, have to be changed later
+
 import cv2
 import numpy as np
 import os
@@ -35,4 +39,4 @@ result = np.zeros((height, width, 3), dtype=np.uint8)
 
 # Save the ROIs to separate image files
 for i, roi in enumerate(rois):
-    cv2.imwrite(f"equal_frames_{i}.jpg", roi)
+    cv2.imwrite(f"equal_frames_overlapping_{i}.jpg", roi)
